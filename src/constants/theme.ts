@@ -63,3 +63,11 @@ export const Spacing = {
 
 export const BottomTabInset = Platform.select({ ios: 50, android: 80 }) ?? 0;
 export const MaxContentWidth = 800;
+
+/**
+ * Brand gradients, kept separate from `Colors` because they are used with
+ * `expo-linear-gradient` (an array of stops) instead of a single color value.
+ */
+export const Gradients = {
+  brand: ['#4F63F0', '#7C4FE0', '#B34FE0'] as const,
+} as const;
